@@ -1,0 +1,41 @@
+* {padding:0;margin:0;overflow:hidden;}
+body {font:bold 15px 'Courier New';background:#000;overflow:hidden;position:fixed;top:0;left:0;bottom:0;right:0;}
+
+.primary {width:470px;height:630px;border:5px solid #555;border-radius:15px;margin:0 auto;overflow:hidden;position:relative;}
+.inner {position:relative;display:block;width:100%;height:100%;}
+
+.radar {position:absolute;bottom:0px;left:0;right:0;}
+.radar circle {display:block;position:absolute;top:100%;left:50%;border:1px solid #00FF00;z-index:1;}
+.radar .needle {width:4px;background:#00FF00;position:absolute;left:50%;margin-left:-2px;top:0;height:250px;}
+.radar .inner {height:250px;}
+
+.radar .needle { 
+ -webkit-transform: rotate(-90deg);
+-webkit-transform-origin: left bottom;
+ }
+
+
+.header {border-bottom:2px solid #555;height:80px;font-weight:bold}
+.header .inner {padding:10px;padding-left:15px;}
+.header .section {float:left;width:70px;text-align:center;margin-right:20px;}
+.header .section > * {display:block;color:#00FF00;}
+.header .section small {font-size:20px;}
+.header .section large {font-size:40px;letter-spacing:-2px;color:#F0F8FF;}
+
+
+.arm {color:#eee;position:absolute;top:100px;right:20px;width:150px;}
+
+.arm .note {background:#006400;color:#00FF00;border:1px solid #00FF00;padding:10px 15px;font-size:20px;text-align:center;margin-bottom:10px;}
+
+.arm .torpedo {border:1px solid #00ff00;float:left;width:70px;text-align:center;height:140px;}
+.arm .torpedo:last-child {margin-left:5px;}
+.arm .torpedo .bay {background:#888;width:50px;height:50px;line-height:55px;font-size:40px;border-radius:50px;margin:0 auto;margin-top:5px;}
+.arm .torpedo label {padding:1px 3px;background:#00008B;margin:5px;display:block;color:#aaa;}
+.arm .torpedo label.a {margin-top:10px;background:#006400;}
+.arm .torpedo label.f {background:#8B0000;}
+
+.gauges {position:absolute;color:#fff;left:20px;top:100px;width:250px;}
+
+.gauges .gauge {border:1px solid #555;padding:5px;width:60px;text-align:center;height:240px;float:left;margin-right:10px;}
+.gauges .gauge label {display:block;margin-bottom:15px;color:#778899;}
+.gauges .gauge .panel {height:15px;margin-bottom:5px;border-radius:4px;}
